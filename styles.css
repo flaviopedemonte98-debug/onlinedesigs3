@@ -1,0 +1,384 @@
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4A4A4A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+}
+
+/* Header/Hero Section */
+.hero {
+    background-color: #131313;
+    color: rgb(247, 242, 242);
+    text-align: center;
+    padding: 150px 20px;
+    background-size: cover;
+    background-position: center;
+    
+    /* Comentario: La imagen de fondo debe ser agregada aquí */
+    /* background-image: url('tu-imagen-hero.jpg'); */
+}
+
+
+
+
+
+
+
+
+/* ...existing code... */
+.hero {
+    background-image: url('./imagenes/img\ \(1\).PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 40vh; /* Ajusta la altura según lo que necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+opacity: 0.9;
+}
+    
+/* ...existing code... */
+.imagen-footer{
+
+
+    border-radius:   30px;
+}
+
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,1,0,0.3); /* Ajusta la opacidad si lo deseas */
+    z-index: 1;
+}
+
+
+
+.contact-image-placeholder{
+
+width: 50px;
+height: auto;
+margin: 30px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-principal {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+    
+}
+
+.hero::before {
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    position: relative; 
+    z-index: 2;
+}
+.hero h1 {
+    font-size: 3em;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.hero-button {
+    background-color: #EED792;
+    color: #7B4C38;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    
+    align-items: center;
+    background-color: #7B4C38;
+    color: white;
+    padding: 0px;
+   margin-bottom: 10px;
+   gap: 10px;
+  
+    flex-direction: column;
+}
+
+@media (min-width: 550px) {
+    .about-button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+.about-us img {
+    position: relative;
+     right: 85px;
+}
+    .about-us {
+        
+        justify-content: center;
+       
+    }
+}
+
+hr{
+    color: #131313;
+    background-color: #131313;
+}
+
+
+.image-placeholder {
+    background-color:   #7B4C38; /* Un color de relleno para ver los bloques */
+    border: 1px solid #7B4C38;
+    border-radius: 10px;
+    
+
+}
+
+
+
+.large-image {
+
+    width: 375px;
+    height: 375px;
+}
+
+.large-image img{
+    width:  540px;
+    height: 375px;
+    border-radius: 10px;
+
+    
+}
+
+.about-text {
+    
+
+    max-width: 500px;
+    text-align: center;
+    text-align: justify;
+}
+
+@media (min-width: 550px) {
+    .about-text {
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+
+.about-button {
+    background-color: #EED792;
+    color: #7B4C38;
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: #F8F7F3;
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 550px;      /* Limita el ancho máximo */
+    margin: 0 auto;         /* Centra la sección */
+    border-radius: 100px;    /* Opcional: bordes redondeados */
+    box-sizing: border-box;
+
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    color: #4A4A4A;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media (min-width: 550px) {
+    .menu-items {
+        flex-direction: row;
+    }
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-image {
+    width: 150px;
+    height: 150px;
+    background-color: #D3D3D3; /* Color de relleno para ver los bloques */
+    border-radius: 5px;
+}
+
+.menu-image img
+{
+ width: 150px;
+    height: 159px;
+ border-radius: 5px; 
+ transition: transform 0.3s ease; /* Transición suave */
+}
+
+
+.menu-image img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+    z-index: 2;
+}
+/* ...existing code... */
+
+
+
+
+
+
+
+
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #7B4C38;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (min-width: 550px) {
+    .testimonials-container {
+        flex-direction: row;
+    }
+}
+
+.testimonial-card {
+    background-color: #7B4C38; /* Mismo color de fondo */
+    border-left: 2px solid white;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.testimonial-card .name {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F7F3;
+    padding: 50px 20px;
+}
+
+@media (min-width: 550px) {
+    .contact-section {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+.contact-image-placeholder {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff; /* Color de relleno */
+    border-radius: 30px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+@media (min-width: 550px) {
+    .contact-info {
+        text-align: left;
+    }
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info .phone, .contact-info .address {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Comentario: No se incluyó el pie de página o footer, pero se puede agregar una sección al final con la información deseada. */
